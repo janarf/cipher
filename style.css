@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title title title" "encode meio decode";
+    font-family: Roboto, sans-serif;
+}
+
+.title {
+    grid-area: title;
+    background: url(caesarcipher.jpg) no-repeat;
+    background-position: top;
+    background-size: 75vw;
+    box-shadow: inset 0 0 0 500px rgb(25, 27, 73, 0.7);
+    color: rgb(240, 241, 238, 0.95);
+    padding: 5% 50% 5% 10%;
+}
+
+.encode {
+    grid-area: encode;
+    background-color: rgb(25, 27, 73);
+    padding: 50px;
+}
+
+.meio {
+    grid-area: meio;
+    background-color: rgb(25, 27, 73);
+    padding-top: 50px;
+}
+
+.decode {
+    grid-area: decode;
+    background-color: rgb(25, 27, 73);
+    padding: 50px
+}
+
+#big-title {
+    font-family: 'Special Elite';
+    padding-bottom: 20px;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+#text-wiki {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.07em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(240, 241, 238, 0.5);
+}
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    padding: 10px;
+}
+
+#key {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    width: 60%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.set-key {
+    display: inline-block;
+    text-align: center;
+    width: 100%
+}
+
+#font {
+    color: rgb(240, 241, 238, 0.5)
+}
+
+.card {
+    border-radius: 5px;
+    background-color: white;
+}
+
+#text-to-encode {
+    color: #010E46;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+#key-div {
+    color: #010E46;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+#text-to-decode {
+    color: #010E46;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.button {
+    background-color: #6d7ec0;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.plus-minus {
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 10px;
+    font-weight: bold;
+}
+
+.button:hover {
+    filter: brightness(140%);
+}
+
+.buttons {
+    margin: 10px;
+}
+
+#minus {
+    font-size: 22px;
+}

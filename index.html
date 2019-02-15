@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Cifra de César</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+    <div id="root" class="grid">
+        <div class="title">
+            <div class="title-text">
+                <h1 id="big-title">Cifra de César</h1>
+                <p id="text-wiki">A Cifra de César é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Esse
+                    número fixo também é chamado de chave da cifra.</p>
+                <p id="font">Fonte: <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Wikipedia</a> </p>
+            </div>
+        </div>
+        <div class='encode'>
+            <div class="card">
+                <p id='text-to-encode'> Mensagem em português</p>
+                <br>
+                <hr>
+                <textarea name="" id="encode-msg" cols="50" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="meio">
+            <div class="card">
+                <div class="btn">
+                    <p id='key-div'>Chave da cifra</p>
+                    <br>
+                    <hr>
+                    <div class="set-key">
+                        <input type="button" class="plus-minus" id="minus" value="-" onclick="keyDown()">
+                        <input type="number" id="key" name="key" value="0">
+                        <input type="button" class="plus-minus" id="plus" value="+" onclick="keyUp()">
+                    </div>
+                    <div class="buttons">
+                        <input type="button" class="button" id="button-encode" value="Cifrar" onclick="encodeHtml()">
+                        <br><input type="button" class="button" id="button-decode" value="Decifrar" onclick="decodeHtml()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='decode'>
+            <div class="card">
+                <p id='text-to-decode'>Mensagem cifrada</p>
+                <br>
+                <hr>
+                <textarea name="" id="decode-msg" cols="50" rows="10"></textarea><br>
+            </div>
+        </div>
+    </div>
+    <script src="cipher.js"></script>
+    <script src="tests.js"></script>
+</body>
+
+</html>
